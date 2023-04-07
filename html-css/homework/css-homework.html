@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css HomeWork</title>
+
+    <style>
+        #t1-p {
+            color: red;
+            margin: auto;
+            padding: 10px;
+        }
+
+        section{
+            border: rgb(224, 224, 161);
+            border-width:5px; 
+            border-style:solid;
+        }
+
+        #t2-p{
+            font-size: 50px;
+            color: white;
+            text-shadow: rgb(129, 50, 63) 1px 1px 15px;
+        }
+
+        #t3-p {
+            color: white;
+            margin: auto;
+            padding: 10px;
+            background-color: blue;
+        }
+
+        #t4-p {
+            color: white;
+            margin: auto;
+            padding: 10px;
+            background-color: blue;
+            opacity: 0.5;
+        }
+
+        .lines-image {
+            background-image: url("https://freerangestock.com/sample/140409/abstract-colorful-geometric-background--abstract-background.jpg"); /* The image used */
+            background-color: #cccccc; /* Used if the image is unavailable */
+            height: 500px; /* You must set a specified height */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
+        h1{
+            background-color: rgb(177, 175, 175);
+            color: red;
+            text-align: center;
+        }
+        h2{
+            color: red;
+            text-align: center;
+        }
+
+        #t5-p {
+            color: black;
+            background-color: rgb(172, 169, 169);
+            text-align: right;
+        }
+
+        .back-image {
+            background-image: url("https://tinyurl.com/2b5dayhp"); /* The image used */
+            background-color: #cccccc; /* Used if the image is unavailable */
+            height: 500px; /* You must set a specified height */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
+
+        #t6-p{
+            mix-blend-mode:difference;
+            color:black;
+            text-align: center;
+            margin: auto;
+            width: 640px;
+            padding: 175px;
+            font-size: 100px;
+            filter:invert(150%)
+        }
+    </style>
+</head>
+    <body>
+
+        <section>
+            <p id="t1-p">Color text and <span style="color: greenyellow;">another color</span>, and now back to the same. Oh, and here's a 
+                <span style="background-color: yellowgreen;">different background color</span> just in case you need it!</p>
+        </section>
+        
+            
+        <br>
+        <hr>
+
+        <section>
+            <p id="t2-p">This text to demonstrates the text shadow effect.</p>
+        </section>
+
+        <br>
+        <hr>
+
+        <section>
+            <div class="lines-image">
+                <p id="t3-p">This text has full background color.</p>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+
+        <section>
+            <div class="lines-image">
+                <p id="t4-p">This text has full background color.</p>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+
+        <section>
+                <ul style="color: blue;">
+                    <li>Menu
+                        <ol style="color: rgb(219, 200, 31);">
+                            <li>Sweets</li>
+                            <li>Baby</li>
+                            <li>Kitchen</li>
+                            <li>Furniture
+                                <ul style="color: blue;">
+                                    <li>Sofa</li>
+                                    <li>Chairs</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+        </section>
+
+        <br>
+        <hr>
+
+        <section>
+            <h1>Test CSS Style Sheet</h1>
+            <h2>This is heading level 2</h2>
+            <div style="text-align: left;">
+                Lorem ipsum dolor sit amet, <span style="color: red;">consectetur adipiscing elit</span>, sed do eiusmod tempor incididunt ut <br>
+                labore et dolore <span style="background-color: yellow;">magna aliqua</span>. Ut enim ad minim veniam, <span style="color: red; background-color: yellow;">quis <br> nostrud exercitation</span> 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <p id="t5-p">This page is created with <span style="color: red;">HTML5/CSS3</span></p>
+        </section>
+
+
+        <section>
+            <div class="back-image">
+                <p id="t6-p">"Meow" mean <br> "woof" in cat.</p>
+            </div>
+        </section>
+
+    </body>
+</html>
