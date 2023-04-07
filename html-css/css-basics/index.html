@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Internal css*/
+        /* #second-p{
+            color: red;
+        }
+        .second-p{
+            color: purple;
+        } */
+        p{
+            color: royalblue;
+        }
+        h1{
+            color: teal;
+        }
+        body{
+            color: gray;
+        }
+
+        /*
+            Summary:
+                -Specificity order: id > class > element
+        */
+
+
+        /* #box1, #box2, .box3{
+            color: lightgreen;
+        } */
+
+        /* *{
+            color: royalblue;
+        } */
+
+        /* :root{
+            <!-- store calues in here -->
+            color: royalblue;
+            --bgColor: gray;
+            --fontColor: royalblue;
+        }
+
+        body{
+            background-color: var(--bgColor);
+        } */
+
+
+        .units{
+            font-size: 20px;
+        }
+
+        #p-one {
+            /* 32px */
+            font-size: 2em;
+        }
+        #p-two {
+            font-size: 2rem;
+        }
+
+        main {
+            background-color: lightblue;
+            border: black;
+            border-width:3px; 
+            border-style:outset;
+            height: 100vh;
+
+            /*font-family: 'Times New Roman', Times, serif;*/
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+    <body>
+        <main>
+            <h1>CSS Basics</h1>
+
+        <!-- inline css: fastest predesence is the highest (Overwrites style in header) -->
+        <p>This is inline styled element</p>
+        <p id="second-p" class="second-p">This is inline styled element</p>
+        <p class="third-p">This is inline styled element</p>
+        <p style="color: violet;">This is inline styled element</p>
+        <p style="color: violet;">This is inline styled element</p>
+        <p style="color: violet;">This is inline styled element</p>
+
+
+        <!-- group selectors -->
+        <div class="box">
+            <p id="box1">Box 1</p>
+            <div id="box2">Box 2</div>
+            <span class="box3">Box 3</span>
+        </div>
+
+        <!-- units -->
+        <h1>Units</h1>
+        <pre>
+            px
+            em
+            rem
+            percentage
+        </pre>
+
+        <!-- 
+
+            1 em = 16px (relative parent)
+            1 rem = 16px (relative to body/root)
+            100% = 16px
+         -->
+
+         <div class="units">
+            <p id="p-one">Em text one</p>
+            <p id="p-two"> Rem text two</p>
+         </div>
+        </main>
+    </body>
+</html>
