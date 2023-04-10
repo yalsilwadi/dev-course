@@ -13,6 +13,10 @@
             font-size: 40px;
         }
 
+        :root{
+            background-color: gray;
+        }
+
         body{
             border: solid white;
             background-color: black;
@@ -35,12 +39,40 @@
             padding: 10px;
         }
 
+        ul li:first-child {
+            background-color: red;
+            font-size: 25px;
+        }
+        ul li:last-child {
+            background-color: blue;
+            font-size: 30px;
+        }
+
+        ul li:nth-child(2){
+            background-color: aquamarine;
+        }
+
+        ul li span{
+            color: orange;
+        }
+
+        ul li {
+            color: white;
+        }
     </style>
 </head>
     <body>
         <h1>Pr<span style="color: red;">o</span>fil<span style="color: red;">e</span></h1>
 
         <hr>
+
+        <div id="box">
+            <ul>
+                <li><span>Projects</span></li>
+                <li><span>Contact</span></li>
+                <li><span>Help</span></li>
+            </ul>
+        </div>
 
         <div id="box">
             <img src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" alt="profile" width="100px" height="100px">

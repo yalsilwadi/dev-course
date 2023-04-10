@@ -11,6 +11,7 @@
             background-color: aqua;
             padding: 20px;
             border: solid 10px blue;
+            border-radius: 10px;
         }
 
         a:link {
@@ -29,6 +30,36 @@
         a:hover{
             color: blue;
         }
+
+        :root{
+            background-color: beige;
+        }
+
+        ul li:first-child {
+            background-color: blueviolet;
+        }
+        ul li:last-child {
+            background-color: chocolate;
+        }
+
+        ul li:nth-child(3){
+            background-color: aquamarine;
+        }
+
+        span::before {
+            content: "School name is - ";
+        }
+
+        span::after {
+            content: " - It's in Chicago";
+        }
+
+        .lorem::first-line{
+            color: red;
+        }
+        .lorem::first-letter{
+            font-size: 36px;
+        }
     </style>
 </head>
     <body>
@@ -45,6 +76,25 @@
             <a href="https://www.kirkland.com">Unvisited Link</a>
             <br>
             <a href="https://www.twitter.com">Visited Link</a>
+        </div>
+
+        <div>
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Pseudo Elements</h2>
+            <span>Tech Global</span>
+            <div class="lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat aliquid dolorem est doloribus vitae dolore error <br>
+                ea molestias dignissimos recusandae nostrum deserunt officia, omnis modi neque hic nihil! Magnam.
+            </div>
         </div>
     </body>
 </html>
