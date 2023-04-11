@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+
+    <style>
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            background: lightblue;
+            display: inline; /* dont but you can */
+        }
+        p {
+
+            background: lightcyan;
+            /*display: inline;  dont but you can */
+            /* display: none; hide element */
+            /* visibility: none; */
+        }
+
+        /* div {
+            background: lightcoral;
+        }
+
+        */
+        #span {
+            background: orange;
+            margin-right: 30px;
+            height: 50px;
+            width: 200px;
+        } 
+
+        #lorem {
+            background-color: lightgreen;
+            margin-right: 30px;
+            height: 50px;
+            width: 200px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+    <body>
+        <!-- 
+            By default: h1 and p => have some margins
+            div, span => dont have margins
+            div, p, h1 => they start from left until the end of the page = block element
+        -->
+
+        <h1>Layouts</h1>
+
+        <p>This is a block element p</p>
+
+        <div>This is a block element div</div>
+
+        <span id="span">This is inline element span</span>
+
+        <a href="#">This is an inline element a</a>
+        <img src="https://www.google.com" alt="some">
+
+        <p>
+            <span class="lorem">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+    </body>
+</html>
