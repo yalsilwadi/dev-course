@@ -8,60 +8,37 @@
 
     <style>
 
-        * {
+            * {
             box-sizing: border-box;
             padding: 0;
-        }
+            }
 
-        #container{
-            color: white;
-            height: 500px;
-            width: 600px;
+            #container{
             display: flex;
-            flex-direction: row;
-        }
+            /*   height: 300px; */
+            }
+            #container div {
+            /*   flex: 1; */
+            padding: 10px;
+            font-weight: 900;
+            color: #fff;
+            flex: 1;
+            }
 
-        #box1{
-            border: 1px solid red;
-            padding: 5px;
+            #box1 {
             background-color: red;
-            height: 300px;
-            width: 400px;
-        }
+            /*   flex: 1; */
+            }
 
-        #box2{
-            border: 1px solid greenyellow;
-            padding: 5px;
+            #box2, #box1a{
             background-color: greenyellow;
-            height: 300px;
-            width: 400px;
-        }
-        
-        #box3{
-            border: 1px solid blue;
-            padding: 5px;
-            background-color: blue;
-            height: 300px;
-            width: 400px;
-        }
+            /*   flex: 2; */
+            }
 
-        #box1a{
-            border: 1px solid greenyellow;
-            padding: 5px;
-            background-color: greenyellow;
-            height: 100px;
-            width: 200px;
-            
-        }
-
-        #box1b{
-            border: 1px solid blue;
-            padding: 5px;
+            #box3, #box1b{
             background-color: blue;
-            height: 100px;
-            width: 200px;
-            
-        }
+            /*   flex: 3; */
+            }
 
     </style>
 
@@ -71,7 +48,7 @@
         <div id="container">
 
             <div id="box1">
-                <p>1</p>
+                1
                 <div id="box1a">1a</div>
                 <div id="box1b">1b</div>
             </div>
