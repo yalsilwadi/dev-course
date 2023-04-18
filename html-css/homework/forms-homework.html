@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+
+        body {
+            width: 30%;
+        }
+
+        .container {
+            width: 100%;
+            
+        }
+
+        .leftside {
+            text-align: center;
+            width: 50%;
+            float: left;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            color: red;
+            
+        }
+        a {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .socialimage {
+            float: right;
+            width: 50%;
+        }
+
+        .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        color: red;
+        }
+
+        .signupbox {
+            color: white;
+            background-color: red;
+            border: solid 1px;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .signinbox {
+            color: red;
+            background-color: white;
+            border: red solid 1px;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .termslink {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    
+    <div class="container">
+        <div class="leftside">
+            <h1>Create Account</h1>
+            <a href="https://www.google.com"><img src="https://i.pinimg.com/originals/ab/ac/d2/abacd278df934935128ef71aad0cbaf1.jpg" alt="google" width="30px" height="30px"></a>
+            <a href="https://www.facebook.com"><img src="https://w7.pngwing.com/pngs/832/748/png-transparent-computer-icons-facebook-inc-business-logo-facebook-logo-business-business-cards.png" alt="facebook" width="30px" height="30px"></a>
+            <a href="https://www.twitter.com"><img src="https://www.clipartmax.com/png/middle/356-3566228_image-royalty-free-library-twitter-icon-png-for-free-vector-twitter-logo.png" alt="twitter" width="50px" height="30px"></a>
+            <a href="https://www.tiktok.com"><img src="https://image.similarpng.com/very-thumbnail/2020/11/Tiktok-icon-logo-design-on-transparent-background-PNG.png" alt="tiktok" width="30px" height="30px"></a>
+
+            <p>or use your email for registeration</p>
+
+            <div>
+                <textarea
+                cols="30"
+                rows="1"
+                placeholder="Name"
+                maxlength="100"
+              ></textarea>
+            </div>
+
+            <div>
+                <textarea
+                cols="30"
+                rows="1"
+                placeholder="Email"
+                maxlength="100"
+              ></textarea>
+            </div>
+
+            <div>
+                <textarea
+                cols="30"
+                rows="1"
+                placeholder="Password"
+                maxlength="100"
+              ></textarea>
+            </div>
+
+            <div>
+                <label class="container" style="font-size: 12px;">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    I agree to the <a href="" class="termslink">Terms</a> and <a href="" class="termslink">Privacy Policy</a>.
+                </label>
+            </div>
+
+            <div>
+                <button class="signupbox">Sign Up</button>
+                <button class="signinbox">Sign in</button>
+            </div>
+
+        </div>
+    
+        <div class="socialimage">
+            <img src="https://graphicriver.img.customer.envatousercontent.com/files/80793198/preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=ca63286cb9ef43492415d53019e64759" alt="social" width="100%" height="500px" >
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
