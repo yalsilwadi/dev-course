@@ -5,8 +5,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexBox</title>
+
+    <style>
+        .container {
+            border: 1px solid black;
+            width: 60%;
+            margin: 45px auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .col1 {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .col2{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item1 {
+            margin: 10px;
+            border: solid 1px black;
+        }
+        .item3 {
+            margin: 10px;
+            border: solid 1px black;
+        }
+
+        .item2 {
+            margin: 10px;
+            display: flex;
+            flex-grow: 2;
+            flex-direction: column;
+            border: solid 1px black;
+            padding: 20px;
+        }
+
+        .item1 img {
+            margin: 10px;
+            width: auto;
+            height: 200px;
+            float: left;
+        }
+
+        .item3 img {
+            margin: 10px;
+            width: 20%;
+            height: 100px;
+            float: left;
+        }
+
+        .item2 img {
+            display: block;
+            height: 210px;
+            width: 100%;
+        }
+        .price {
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        .discount {
+            text-decoration: line-through;
+            padding: 0;
+            
+        }
+
+        .percent {
+            font-weight: bold;
+            padding: 0;
+        }
+
+        .gone {
+            padding: 0;
+            color: red;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .laptop {
+            padding: 0px;
+            text-align: left;
+        }
+
+        .show {
+            font-size: larger;
+            text-align: center;
+            padding: 0;
+        }
+
+        .number {
+            font-size: xx-large;
+            color: blue;
+        }
+
+
+    </style>
 </head>
 <body>
+
+    <div class="container">
+
+        <div class="col1">
+            <div class="item1">
+                <img src="https://cdn.shopify.com/s/files/1/1133/1936/products/7045068128319-4.jpg?v=1678122269" alt="watch1">
+                <p>Rolex GMT-Master 11 Stainless Steel Black Dial Automatic Mens Watch 116710N</p>
+                <p class="price"> $11,999.00</p>
+                <span><span class="discount">$12,499.00</span> | <span class="percent">4% OFF</span></span><br>
+                <span>Free shipping</span>
+
+                <p class="gone"> Almost gone</p>
+            </div>
+            <div class="item1">
+                <img src="https://cdn.shopify.com/s/files/1/0506/4805/5959/products/stuhrling-original-tourbillon-hand-wind-men_s-watch-m13469_900x.jpg?v=1615105953" alt="watch1">
+                <p>Stuhrling Meteorite 880 Hand-Wind Toubillon Genuine Lizard Strap Men's...</p>
+                <p class="price"> $11,999.00</p>
+                <span><span class="discount">$12,499.00</span> | <span class="percent">4% OFF</span></span><br>
+                <span>Free shipping</span>
+
+                <p class="gone"> Almost gone</p>
+            </div>
+            <div class="item1">
+                <img src="https://cdn2.chrono24.com/images/uhren/26228434-xmhh5fmqrvvdmojth4tblnx1-ExtraLarge.jpg" alt="watch1">
+                <p>CONCORD MARINER 14k Yellow Gold Date Thin Quartz Men's Watch 77.6...</p>
+                <p class="price"> $11,999.00</p>
+                <span><span class="discount">$12,499.00</span> | <span class="percent">4% OFF</span></span><br>
+                <span>Free shipping</span>
+
+                <!-- <p class="gone"> Almost gone</p> -->
+            </div>
+        </div>
+        <div class="col2">
+            <div class="item2">
+                <img src="https://m.media-amazon.com/images/I/715M0XC16DL.jpg" alt="laptop">
+                <p class="laptop">Microsoft Surface Pro 7 12.3" Touchscreen Intel Core i5 8GB RAM 128GB SSD</p>
+                <p class="price"> $654.99</p>
+                <span><span class="discount">$899.99</span> | <span class="percent">27% OFF</span></span><br>
+                <span>Free shipping</span>
+            </div>
+            <div class="item3">
+                <img src="https://fossil.scene7.com/is/image/FossilPartners/ME3233_main?$sfcc_fos_medium$" alt="watch1">
+                <img src="https://fossil.scene7.com/is/image/FossilPartners/ME3233_main?$sfcc_fos_medium$" alt="watch1">
+                <img src="https://fossil.scene7.com/is/image/FossilPartners/ME3233_main?$sfcc_fos_medium$" alt="watch1">
+                <img src="https://fossil.scene7.com/is/image/FossilPartners/ME3233_main?$sfcc_fos_medium$" alt="watch1">
+                <p class="show">Show <span class="number">85</span> more</p>
+                <p class="show">We Heart These Deals</p>
+                
+            </div>
+        </div>
+
+    </div>
     
 </body>
 </html>
