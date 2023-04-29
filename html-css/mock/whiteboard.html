@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+        }
+        .container > div {
+            padding: 10px;
+        }
+
+        .yellow {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            width: 10%;
+        }
+
+        .red {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            width: 10%;
+        }
+
+        .green {
+            background-color: greenyellow;
+            width: 10%;
+        }
+
+        .orange {
+            background-color: orange;
+            width: 30%;
+        }
+
+        .blue {
+            background-color: blue;
+            width: 10%;
+        }
+
+        .innerbox {
+             background-color: white;
+             padding: 10px;
+        }
+        .innertext {
+             background-color: white;
+             margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="yellow"> 
+                <p>YELLOW</p> 
+                <p class="innerbox">1</p>
+                <p class="innerbox">2</p>
+                <p class="innerbox">3</p>
+                <p class="innerbox">4</p>
+        </div>
+        <div class="red"> <p>RED</p>
+
+            <p class="innerbox">A</p>
+            <p class="innerbox">B</p>
+            <p class="innerbox">C</p>
+            <p class="innerbox">D</p>
+
+        </div>
+        <div class="green"><p>GREEN</p></div>
+        <div class="orange"><p>ORANGE</p></div>
+        <div class="blue"><p>BLUE</p></div>
+
+    </div>
+    
+</body>
+</html>
