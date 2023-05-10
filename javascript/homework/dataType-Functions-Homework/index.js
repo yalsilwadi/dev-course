@@ -199,6 +199,14 @@ You know how old your dog is in human years, but what about dog years? Calculate
 - Bonus: Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
+function calculateDogAge(pupAge){
+  return `Your doggie is ${pupAge*7} years old in dog years!`
+}
+
+console.log(calculateDogAge(7));
+console.log(calculateDogAge(3));
+console.log(calculateDogAge(25));
+
 /* 
 ## The Lifetime Supply Calculator
 
@@ -212,7 +220,14 @@ Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no mo
 - Bonus: Accept floating point values for amount per day, and round the result to a round number.
 */
 
+function calculateSupply(age, amountPerDay){
+  const maxAge = 85;
+  return `You will need ${(maxAge-age)*365*amountPerDay} to last you until the ripe age of ${maxAge}`
+}
 
+console.log(calculateSupply(25, 25));
+console.log(calculateSupply(18, 45));
+console.log(calculateSupply(55, 15));
 
 /* 
 ## The Geometrizer
@@ -228,6 +243,25 @@ Create a function called calcArea:
 
 - Pass the radius to the function.
 - Calculate the area based on the radius, and output "The area is NN".
+
+*/
+
+function calcCircumfrence(radius){
+  pi = Math.PI;
+  var circumference = 2*pi*radius;
+  return `The circumgerence is ${circumference}`
+}
+
+function calcArea(radius){
+  var areaOfCircle = pi * radius * radius;
+  return `The area is ${areaOfCircle}`
+}
+
+console.log(calcCircumfrence(4));
+console.log(calcArea(4));
+
+
+/*
 
 ## The Temperature Converter
 
@@ -245,3 +279,16 @@ Create a function called fahrenheitToCelsius:
 
 
 */
+
+function celsiusToFahrenheit(celsTemp){
+  var calcFahrenheit = celsTemp * 9 / 5 + 32;
+  return `${celsTemp}C is ${calcFahrenheit}F`
+}
+
+function fahrenheitToCelsius(fehrTemp){
+  var calcCel = (5/9) * (fehrTemp - 32);
+  return `${fehrTemp}F is ${calcCel}C`
+}
+
+console.log(celsiusToFahrenheit(25));
+console.log(fahrenheitToCelsius(77));
