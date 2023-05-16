@@ -25,9 +25,7 @@ form.addEventListener("submit", (event) => {
   } else if (weightValue === "" || weightValue < 2 || isNaN(weightValue)) {
     error.textContent = "Weight can not be empty or NaN or less than 2";
   } else {
-    const bmi = (weightValue / ((heightValue * heightValue) / 10000)).toFixed(
-      2
-    );
+    const bmi = (weightValue / ((heightValue * heightValue) / 10000)).toFixed(2);
     result.innerHTML = `<h2>${bmi}</h2>`;
   }
 });
