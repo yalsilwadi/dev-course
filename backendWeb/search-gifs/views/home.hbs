@@ -1,0 +1,27 @@
+<h1 style="text-align: center;">Search GIF's using Tenor API</h1>
+
+<div style="text-align: center;">
+    <span style="margin: 10px;"><a href="http://localhost:5050/random">Go to random gifs</a></span>
+    <span style="margin: 10px;"><a href="http://localhost:5050/suggestions">Go to suggested gifs</a></span>
+</div>
+<br>
+<form action="/" style="text-align: center; margin: 10px;">
+    <input type="text" name="term">
+    <button type="submit">Search</button>
+</form>
+
+{{#if error}}
+<p style="text-align: center;">{{error}}</p>
+{{/if}}
+
+{{#each gifs}}
+    <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+    <div style="margin: 10px;">
+        <span>Description: {{this.content_description}}</span> <br>
+        <span>Link to GIF on Tenor Website: {{this.url}}</span> <br>
+        <span>Created On: {{this.created}}</span> <br>
+    </div>
+    <img style="margin: 10px; max-width: 100%; max-height: 100%;" src={{this.itemurl}} alt={{this.content_description}}>
+    <hr>
+   </div>   
+{{/each}}

@@ -1,0 +1,18 @@
+<p style="text-align: center;"><a href="http://localhost:5050/">Home Page</a></p>
+<h1 style="text-align: center;">Random Gifs</h1>
+
+{{#if error}}
+<p>{{error}}</p>
+{{/if}}
+
+{{#each results}}
+    <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+    <div style="margin: 10px;">
+        <span>Description: {{this.content_description}}</span> <br>
+        <span>Link to GIF on Tenor Website: {{this.url}}</span> <br>
+        <span>Created On: {{this.created}}</span> <br>
+    </div>
+    <img style="margin: 10px; max-width: 100%; max-height: 100%;" src={{this.itemurl}} alt={{this.content_description}}>
+    <hr>
+   </div>   
+{{/each}}
