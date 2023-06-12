@@ -1,7 +1,9 @@
 const express = require("express");
 const { engine } = require("express-handlebars");
+const path = require("path");
 // App
 const app = express();
+app.use(express.static(path.join(__dirname, "public")));
 
 // Init Tenorjs
 const SECRET_KEY = "AIzaSyCM4lMIooaRqum8NDpboZRHoA0eIjfPgww";
